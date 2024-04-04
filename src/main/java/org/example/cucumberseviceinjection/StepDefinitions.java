@@ -4,15 +4,16 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.spring.CucumberContextConfiguration;
 
-//@CucumberContextConfiguration
+@CucumberContextConfiguration
 public class StepDefinitions {
 
-//	private final DummyService dummyService;
-//
-//	public StepDefinitions(DummyService dummyService) {
-//		this.dummyService = dummyService;
-//	}
+	private final DummyService dummyService;
+
+	public StepDefinitions(DummyService dummyService) {
+		this.dummyService = dummyService;
+	}
 
 	@Before
 	public void before(Scenario scenario) {

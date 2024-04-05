@@ -11,7 +11,7 @@ public class CucumberTestRunner {
     public void run() {
         var request = LauncherDiscoveryRequestBuilder.request()
                 .selectors(DiscoverySelectors.selectClasspathResource("features"))
-                .configurationParameter("cucumber.glue", "org.example.cucumberseviceinjection")
+                .configurationParameter("cucumber.glue", "org.example.glue")
                 .configurationParameter("cucumber.plugin", "pretty")
                 .build();
         var initialLauncher = LauncherFactory.create();

@@ -1,4 +1,4 @@
-package org.example.cucumberseviceinjection;
+package org.example.glue;
 
 import org.springframework.stereotype.Service;
 
